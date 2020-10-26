@@ -2,6 +2,8 @@
 typora-copy-images-to: img
 ---
 
+[TOC]
+
 # 프로그램과 프로세스
 
 > 2020.10.21
@@ -93,6 +95,4 @@ typora-copy-images-to: img
     - **linked list for ready processes**(레디 상태인 프로세스는 Candidate of CPU Scheduling이므로 ready list를 따로 갖는다.)
 
 
-
-### 
 
