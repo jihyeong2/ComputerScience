@@ -16,7 +16,7 @@
 
 ### 1.1 Physical layout of File System
 
-​	![image-20201027161156540](img\FileSystem.jpg)
+​	![image-20201027161156540](.\img\FileSystem.jpg)
 
 - Boot block : 부팅 코드를 저장한다.
 - Super block : 메타데이터의 크기와 루트 디렉토리의 inode ID, Physical layout information of file system(bitmap의 시작 섹터, inode블락의 시작 섹터, data 블락의 시작 섹터)가 저장되어있다. 
@@ -32,7 +32,7 @@
 
 - data block : file data(name, inode ID)가 저장되어 있다.
 
-  ![image-20201027164421969](img\inode)
+  ![image-20201027164421969](.\img\inode.jpg)
 
 - Bitmap block : inode bitmap과 data bitmap으로 구성되어 있다.
   - inode bitmap : inode block의 할당여부를 나타내며, file의 maximum number가 inode bitmap size에 의해 결정된다.

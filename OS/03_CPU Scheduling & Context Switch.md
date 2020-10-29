@@ -37,7 +37,7 @@
 ### 1.3 Preemptive Scheduling
 
 - FCFS(First Come First Serve) : 가장 먼저 ready list를 참조하여 head에서부터 순서대로 CPU를 할당하며 작업을 처리하는 방식이다.
-  - ![FCFS](C:\Users\qmffn\Desktop\ComputerScience\OS\img\FCFS.jpg)
+  - ![FCFS](.\img\FCFS.jpg)
   - P1,P2,P3가 0초에 ready state로 된 경우, FCFS
     - P1이 먼저 실행되고, 이후에 P2, P3가 순차적으로 실행된다.
     - FCFS 방식에 의하면, 실행시간이 짧은 프로세스들은 응답시간이 매우 길어질 수 있다.
@@ -45,7 +45,7 @@
 
 
 - SJF(Shortest Job First) : 실행시간이 짧은 프로세스를 우선적으로 실행하는 방식이다.
-  - ![SJF](C:\Users\qmffn\Desktop\ComputerScience\OS\img\SJF.jpg)
+  - ![SJF](.\img\SJF.jpg)
   - P1,P2,P3가 0초에 ready state로 된 경우, SJF
     - 실행시간이 짧은 P2,P3가 먼저 실행되고, 그 다음 P1이 실행된다.
     - SJF는 비선점 스케쥴링에서 이상적인 평균 응답시간을 갖는다. 하지만, 실행시간이 긴 프로세스는 CPU가 실행을 계속 미루어, `An indefinite starvation`을 야기할 수 있다.
@@ -56,7 +56,7 @@
 ### 1.4 Preemptive Scheduling
 
 - Round-Robin : 라운드로빈 스케쥴링은 FCFS와 비슷하지만, 각각의 프로세스는 동일한 양만큼의 시간동안만 CPU를 할당받는다. 주어진 시간이 끝나면 프로세스의 종료여부와 관계없이 CPU는 다른 프로세스에 할당된다(Context Switch).
-  - ![RoundRobin](C:\Users\qmffn\Desktop\ComputerScience\OS\img\RoundRobin.jpg)
+  - ![RoundRobin](.\img\RoundRobin.jpg)
   - P1,P2,P3가 0초에 ready state로 된 경우, RR(time quantum=2)
     - 라운드로빈 스케쥴링은 프로세스들의 우선순위를 따지지 않고 ready state가 된 순서대로 설정된 time quantum만큼 번갈아가며 프로세스들을 실행한다.
     - Time Quantum이 크면 FCFS와 같게 되고, 작다면 Context Switch가 잦아져서 오버헤드가 증가한다.

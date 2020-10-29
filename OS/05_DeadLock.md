@@ -14,7 +14,7 @@
 
 ### 1.1 DeadLock이 발생하는 경우
 
-![image-20201025144112314](C:\Users\qmffn\Desktop\ComputerScience\OS\img\DeadLock)
+![image-20201025144112314](.\img\DeadLock.jpg)
 
 > [출처 : https://includestdio.tistory.com/12]
 

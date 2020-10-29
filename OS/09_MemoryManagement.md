@@ -24,7 +24,7 @@
 
 - 메모리가 고정된 사이즈로 나뉘어 있으며, 각 프로세스들은 정해진 메모리 공간에 할당된다. 
 
-![image-20201027100325436](img\StaticPartitinoningStaticAllocation.png)
+![image-20201027100325436](.\img\StaticPartitinoningStaticAllocation.png)
 
 - 문제점 : 다른 파티션이 비어있음에도 불구하고, 정해진 파티션만 사용하려 대기하는 상황이 벌어지게 된다. 즉, 메모리 낭비가 발생하게 된다.
 
@@ -34,7 +34,7 @@
 
 - 메모리가 고정된 사이즈로 나뉘어 있으며, 각 프로세스들은 사용가능한 메모리에 동적으로 할당된다. 동적으로 할당되기 때문에 Static Allocation과 같은 메모리 낭비는 발생하지 않는다.
 
-![image-20201027100413519](C:\Users\aclass\Desktop\kjh\ComputerScience\OS\img\StaticPartitioningDynamicAllocation.png)
+![image-20201027100413519](.\img\StaticPartitioningDynamicAllocation.png)
 
 
 
@@ -85,7 +85,7 @@
 
 - 가상 주소 공간은 크게 세 가지 영역으로 구성되어 있다. 프로그램의 명령어를 저장하는 Code영역, 동적 메모리 할당을 위한 heap영역, 지역변수와 매개변수 등의 저장을 위한 Stack영역이다. 이 때 Heap과 Stack 사이에 사용하지 않는 빈 공간은 Heap이나 Stack이 모자랄 경우 확장하여 사용한다.
 
- ![image-20201027121037053](img\VirtualAddressSpace.jpg)
+ ![image-20201027121037053](.\img\VirtualAddressSpace.jpg)
 
 ### 3.2 Logical Address & Physical Address
 
@@ -102,7 +102,7 @@
 
 - 위에서 언급했듯이, 운영체제는 가상의 메모리 주소를 제공한다. 하지만 이를 통해 실제 메모리에 접근하려면 가상 메모리를 물리적 메모리로 변환해야한다. 이를 **Address Translation**이라 한다.
 
-  ![image-20201027121452654](img\AddressTranslation.jpg)
+  ![image-20201027121452654](.\img\AddressTranslation.jpg)
 
 - Physical Address = Logical Address + base
 
@@ -133,7 +133,7 @@
 
 - 만약 프로세스가 16KB를 요청한다면, 4개의 페이지를 할당하면 된다.
 
-  ![image-20201027140717476](img\pagingSystem.jpg)
+  ![image-20201027140717476](.\img\pagingSystem.jpg)
 
 - 페이지는 위의 그림과 같이 physical memory가 **Noncontiguous**일 수 있다.
 
@@ -145,7 +145,7 @@
 
 - CPU는 현재 실행되고 있는 프로세스의 페이지 테이블의 논리적 주소를 사용하여 물리적 주소를 계산한다.
 
-  ![image-20201027141421745](C:\Users\aclass\Desktop\kjh\ComputerScience\OS\img\pagingSystem2.jpg)
+  ![image-20201027141421745](.\img\pagingSystem2.jpg)
 
 ### 4.3 Page Table
 
@@ -160,7 +160,7 @@
 
 - TLB에 L이 있으면 P를 꺼내오고 그렇지 않으면 메모리의 페이지 테이블에서 P를 가져온다.
 
-  ![image-20201027151036765](img\TLB.jpg)
+  ![image-20201027151036765](.\img\TLB.jpg)
 
 ### 4.5 Hierachical Page Tables
 

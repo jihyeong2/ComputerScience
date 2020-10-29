@@ -22,7 +22,7 @@ typora-copy-images-to: img
 
 ### 1.1 Process State
 
-![process_state](C:\Users\qmffn\Desktop\ComputerScience\OS\img\process_state.jpg)
+![process_state](./img/process_state.jpg)
 
 - running : CPU를 할당받고 실행 중인 상태
 - ready : CPU를 할당받고 있지 않지만, 즉시 run 할 수 있도록 대기하고 있는 상태
