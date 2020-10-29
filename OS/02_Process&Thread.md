@@ -1,7 +1,3 @@
----
-typora-copy-images-to: img
----
-
 [TOC]
 
 # 프로그램과 프로세스
