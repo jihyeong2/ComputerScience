@@ -48,7 +48,7 @@
 
 > CPU가 하나의 명령을 주기억장치로부터 읽어들여 해석하고 실행할 때까지 걸리는 시간 또는 일련의 순서
 
-![image-20201102145156798](C:\Users\qmffn\AppData\Roaming\Typora\typora-user-images\image-20201102145156798.png)
+![InstructionCycle](./img/InstructionCycle.png)
 
 [출처] : 정보처리기능사 필기 동영상 강좌 directed by 인컴79© http://www.incom79.com 
 
