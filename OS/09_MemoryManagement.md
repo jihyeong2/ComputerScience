@@ -162,7 +162,7 @@
 
   ![image-20201027151036765](./img/TLB.jpg)
 
-### 4.5 Hierachical Page Tables
+### 4.5 Hierarchical Page Tables
 
 - 페이지 테이블이 계층 구조를 갖는 것으로, 일반적으로 two-level-page table이 있다.
 - 이는 페이지 테이블을 페이지화 하여 하드 디스크에 저장해두고 있다가 필요시 메모리로 로드하는 방식이다. 이러면 Logical Address는 p1,p2,d 방식으로 나눈다.

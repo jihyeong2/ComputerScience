@@ -64,3 +64,60 @@
 
 ### 2.1 Logical Disk Structure
 
+![image-20201108181730527](./img/DiskStructure.png)
+
+- Platter : Data가 저장되는 공간
+- Read-write head : Platter 위치에서 data를 read하기 위해 사용
+- Sector : Logical Block이 저장되는 공간
+- Spindle : Data를 읽고 쓰기 위해 회전하는데 사용
+- Track : Platter로부터 같은 거리에 있는 Sector들의 집합
+- Cylinder : Spindle로부터 같은 거리에 존재하는 Track들의 집합
+
+
+
+**Disk drive는 logical block들의 1차원 배열 형태로 되어 있다.**
+
+**Logical block은 전송의 최소 단위로 사용된다.**
+
+**Logical block은 순차적으로 sector에 mappling된다.**
+
+**Sector 0은 첫번째 Track의 첫번째 sector로 cylinder의 가장 바깥쪽에 있다.**
+
+
+
+### 2.2 Access Time
+
+> Access Time = Seek time + Rotational delay + Data transfer time
+
+- Seek time : head를 찾고자 하는 sector가 있는 cylinder로 이동시키는데 걸리는 시간
+- Rotational delay : Disk의 head가 찾고자 하는 sector로 회전시키는데 걸리는 시간
+- Data transfer time : Data를 전송하는데 걸리는 시간
+- Disk bandwidth : 첫번째 요청에서 마지막 전송까지 걸리는 총 시간 당 전송된 총 byte의 양으로 측정한다.
+
+
+
+### 2.3 Disk Scheduling
+
+1. FCFS(First Come First Serve) : 먼저 온 Sector부터 순차적으로 스케쥴링된다.
+
+   ​	![image-20201108182218189](./img/DiskFCFS.png)
+
+   - Seek Time이 커질 수 있다.
+
+
+
+2. SSTF(Shortest Seektime First) : 현재 head 위치에서 가장 짧은 seek time을 갖는, 가장 가까운 sector를 먼저 탐색한다.
+
+   ![image-20201108183925337](./img/SSTF.png)
+
+   - Seek time이 큰 것을 오랫동안 읽히지 않는 상황이 생겨 Starvation을 야기한다.
+
+
+
+3. SCAN : 먼저 start sector 쪽으로 탐색하다가 end secotr 방항으로 탐색을 이어간다.
+
+   ![image-20201108195533793](./img/SCAN.png)
+
+4. C-SCAN : end sector 방향으로 먼저 탐색하다가, start sector로 간 후, 다시 end sector 방향으로 탐색을 이어간다. SCAN 방식과 비슷해보이지만 start sector로 갈 때는 탐색없이 head pointer를 start sector로 이동시키므로 단방향 탐색이라고 할 수 있다.
+
+   ![image-20201108195442620](./img/C-SNAN.png)
