@@ -34,7 +34,7 @@
 
 
 
-### 1.3 Preemptive Scheduling
+### 1.3 Non-Preemptive Scheduling
 
 - FCFS(First Come First Serve) : 가장 먼저 ready list를 참조하여 head에서부터 순서대로 CPU를 할당하며 작업을 처리하는 방식이다.
   - ![FCFS](./img/FCFS.jpg)
